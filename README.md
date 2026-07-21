@@ -1,6 +1,7 @@
 **For Api Versioning**
 
 **Step 1. Add refferences from NuGet package manager**
+
         Asp.Versioning.Mvc, Asp.Versioning.Mvc.ApiExplorer
 
 
@@ -10,7 +11,9 @@
         [ApiVersion("1.0")]
         [Route("api/v{version:apiVersion}/[controller]")]
 
-
+        [ApiVersion("2.0")]
+        [Route("api/v{version:apiVersion}/[controller]")]
+        
         
 **Step 3. Add services to the container. in program.cs before builder.Services.AddControllers();**
 
